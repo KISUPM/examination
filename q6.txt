@@ -1,0 +1,36 @@
+DISTINCT ใน SQL command จะถูกใช้ในขั้นตอนการเลือกสิ่งที่จะแสดง
+โดย DISTINCT มีไว้เพื่อ ป้องกันการแสดงข้อมูล tuple ที่ซ้ำกัน โดยจะแสดงเป็น tuble เดียวไปเลย หรือก็คือ แสดงเฉพาะ tuple ที่มีค่าต่างกัน
+
+ตัวอย่างข้อมูล
+Table Employee
+Name   | Gender
+Alice  |  F
+Bob    |  M
+Cath   |  F
+Dean   |  F
+Ed     |  M
+Frank  |  M
+
+ตัวอย่างการใช้คำสั่ง
+
+<<แบบไม่ใช้ DISTINCT>>
+SELECT Gender
+FROM Employee
+
+ตัวอย่างผลลัพธ์
+Gender
+F
+M
+F
+F
+M
+M
+
+<<แบบใช้ DISTINCT>>
+SELECT DISTINCT Gender
+FROM Employee
+
+ตัวอย่างผลลัพธ์
+Gender
+F
+M
