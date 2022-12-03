@@ -1,5 +1,6 @@
 <<<result from SQL command>>>
-StoreName  |   Total
+StoreName   |   Total
+-----------------------
 Ristr8to    |   50000
 MOOH        |   50000
 Mango Tango |   35000
